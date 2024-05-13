@@ -1,0 +1,672 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Data(2021-2022 EPL Player Stats)' inline='true' name='federated.02f5rp40tln74y1bs7a2p06pa428' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='2021-2022 EPL Player Stats' name='excel-direct.02acr7f0ro2oxd1fx9cid09vsm7m'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Repo/Tableau/TableauVisualization/CH 03/연습문제/2021-2022 EPL Player Stats.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.02acr7f0ro2oxd1fx9cid09vsm7m' name='Data' table='[Data$]' type='table'>
+          <columns gridOrigin='A1:P547:no:A1:P547:0' header='yes' outcome='6'>
+            <column datatype='integer' name='순번' ordinal='0' />
+            <column datatype='string' name='선수' ordinal='1' />
+            <column datatype='string' name='국적' ordinal='2' />
+            <column datatype='string' name='포지션' ordinal='3' />
+            <column datatype='string' name='팀' ordinal='4' />
+            <column datatype='integer' name='나이' ordinal='5' />
+            <column datatype='integer' name='생년' ordinal='6' />
+            <column datatype='integer' name='출전횟수' ordinal='7' />
+            <column datatype='integer' name='출전횟수 (선발)' ordinal='8' />
+            <column datatype='integer' name='출전시간 (분)' ordinal='9' />
+            <column datatype='integer' name='득점' ordinal='10' />
+            <column datatype='integer' name='도움' ordinal='11' />
+            <column datatype='integer' name='득점 (필드골)' ordinal='12' />
+            <column datatype='integer' name='득점 (페널티킥)' ordinal='13' />
+            <column datatype='integer' name='경고' ordinal='14' />
+            <column datatype='integer' name='퇴장' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.02acr7f0ro2oxd1fx9cid09vsm7m' name='Data' table='[Data$]' type='table'>
+          <columns gridOrigin='A1:P547:no:A1:P547:0' header='yes' outcome='6'>
+            <column datatype='integer' name='순번' ordinal='0' />
+            <column datatype='string' name='선수' ordinal='1' />
+            <column datatype='string' name='국적' ordinal='2' />
+            <column datatype='string' name='포지션' ordinal='3' />
+            <column datatype='string' name='팀' ordinal='4' />
+            <column datatype='integer' name='나이' ordinal='5' />
+            <column datatype='integer' name='생년' ordinal='6' />
+            <column datatype='integer' name='출전횟수' ordinal='7' />
+            <column datatype='integer' name='출전횟수 (선발)' ordinal='8' />
+            <column datatype='integer' name='출전시간 (분)' ordinal='9' />
+            <column datatype='integer' name='득점' ordinal='10' />
+            <column datatype='integer' name='도움' ordinal='11' />
+            <column datatype='integer' name='득점 (필드골)' ordinal='12' />
+            <column datatype='integer' name='득점 (페널티킥)' ordinal='13' />
+            <column datatype='integer' name='경고' ordinal='14' />
+            <column datatype='integer' name='퇴장' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:P547:no:A1:P547:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>순번</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[순번]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>순번</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>선수</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[선수]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>선수</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>국적</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[국적]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>국적</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>포지션</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[포지션]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>포지션</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>팀</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[팀]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>팀</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>나이</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[나이]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>나이</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>생년</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[생년]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>생년</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>출전횟수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[출전횟수]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>출전횟수</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>출전횟수 (선발)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[출전횟수 (선발)]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>출전횟수 (선발)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>출전시간 (분)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[출전시간 (분)]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>출전시간 (분)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>득점</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[득점]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>득점</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>도움</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[도움]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>도움</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>득점 (필드골)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[득점 (필드골)]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>득점 (필드골)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>득점 (페널티킥)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[득점 (페널티킥)]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>득점 (페널티킥)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>경고</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[경고]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>경고</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>퇴장</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[퇴장]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>퇴장</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Data' datatype='table' name='[__tableau_internal_object_id__].[Data_013889185E0244FA86E0A51626669819]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='ko_KR' class='hyper' dbname='C:/Users/Kiwoong/AppData/Local/Temp/TableauTemp/#TableauTemp_0fcn6ej0hj4uj11gmhzmp17c7e6u.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/13/2024 03:38:30 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>순번</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[순번]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>순번</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>546</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>선수</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[선수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>선수</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>537</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>국적</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[국적]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>국적</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>63</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>포지션</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[포지션]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>포지션</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>팀</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[팀]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>팀</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>나이</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[나이]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>나이</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>생년</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[생년]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>생년</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>출전횟수</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[출전횟수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>출전횟수</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>출전횟수 (선발)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[출전횟수 (선발)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>출전횟수 (선발)</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>출전시간 (분)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[출전시간 (분)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>출전시간 (분)</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>478</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>득점</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[득점]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>득점</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>도움</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[도움]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>도움</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>득점 (필드골)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[득점 (필드골)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>득점 (필드골)</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>득점 (페널티킥)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[득점 (페널티킥)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>득점 (페널티킥)</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>경고</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[경고]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>경고</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>퇴장</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[퇴장]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>퇴장</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_013889185E0244FA86E0A51626669819]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Data' id='Data_013889185E0244FA86E0A51626669819'>
+            <properties context=''>
+              <relation connection='excel-direct.02acr7f0ro2oxd1fx9cid09vsm7m' name='Data' table='[Data$]' type='table'>
+                <columns gridOrigin='A1:P547:no:A1:P547:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='순번' ordinal='0' />
+                  <column datatype='string' name='선수' ordinal='1' />
+                  <column datatype='string' name='국적' ordinal='2' />
+                  <column datatype='string' name='포지션' ordinal='3' />
+                  <column datatype='string' name='팀' ordinal='4' />
+                  <column datatype='integer' name='나이' ordinal='5' />
+                  <column datatype='integer' name='생년' ordinal='6' />
+                  <column datatype='integer' name='출전횟수' ordinal='7' />
+                  <column datatype='integer' name='출전횟수 (선발)' ordinal='8' />
+                  <column datatype='integer' name='출전시간 (분)' ordinal='9' />
+                  <column datatype='integer' name='득점' ordinal='10' />
+                  <column datatype='integer' name='도움' ordinal='11' />
+                  <column datatype='integer' name='득점 (필드골)' ordinal='12' />
+                  <column datatype='integer' name='득점 (페널티킥)' ordinal='13' />
+                  <column datatype='integer' name='경고' ordinal='14' />
+                  <column datatype='integer' name='퇴장' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='시트 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6521F2CD-A934-4883-9DE1-19F012EA7CDC}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='시트 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B911695B-897C-4E4D-90DA-D956C3B9D9CC}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='시트 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
